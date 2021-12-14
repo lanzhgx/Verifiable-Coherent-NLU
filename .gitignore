@@ -1,1 +1,8 @@
 env/
+cache/
+www/__pycache__
+www/dataset
+www/model
+core*
+.ipynb*
+saved_models*
