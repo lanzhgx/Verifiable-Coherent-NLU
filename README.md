@@ -1,9 +1,20 @@
 # How to reproduce our results:
 For the verb feature augmentation, run the notebook called Verifiable-Coherent-NLU-verb-feature-augmentation.ipynb . When dealing with verb feature augmentation, make sure to change the corresponding boolean flag. When installing the dependencies, you may need to check the version of package "Progressbar" or "Progressbar2". 
+
 For the synonym replacement augmentation, run the notebook called Verifiable-Coherent-NLU.ipynb by changing the line
+
+```
 data_file = os.path.join(DRIVE_PATH, 'all_data/www_2s_new.json')
+```
+
 into
-data_file = os.path.join(DRIVE_PATH, 'all_data/synonym_1.0_www_2s_new_1215.json') where 1.0 means the probability of replacing a word.
+```
+data_file = os.path.join(DRIVE_PATH, 'all_data/synonym_1.0_www_2s_new_1215.json')
+```
+where 1.0 means the probability of replacing a word.
+
+The data file can be found in the google drive link here https://drive.google.com/drive/folders/1t_mx3Tom4LnxSHKm1wtHOpjry_pYcPLL?usp=sharing .
+
 # Verifiable-Coherent-NLU
 Shared repository for TRIP dataset for verifiable NLU and coherence measurement for text classifiers. Covers the following upcoming publications in Findings of EMNLP 2021:
 1. Shane Storks, Qiaozi Gao, Yichi Zhang, and Joyce Chai. (2021). [Tiered Reasoning for Intuitive Physics: Toward Verifiable Commonsense Language Understanding](https://arxiv.org/abs/2109.04947). In _Findings of EMNLP 2021_.
